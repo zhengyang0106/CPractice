@@ -4,8 +4,7 @@
 	> Mail:1021606521@qq.com 
 	> Created Time: 2019年04月24日 星期三 18时59分49秒
  ************************************************************************/
-#include<stdio.h>
-#include<math.h>
+
 int swap (int  *a, int *b) {
     int temp ;
     temp = *a;
@@ -15,7 +14,7 @@ int swap (int  *a, int *b) {
 int ojld (int m, int n ,int p) {
     if (m == n) return p;
     if (m / n >= 2) return p;
-    else return ojld (n, m - n,p ^ 1 );
+    else return ojld (n, m - n,p ^ 1 );//  p ^ 1   是一个很好的变换选手的方式
 }
 
 
